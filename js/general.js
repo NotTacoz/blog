@@ -8,7 +8,6 @@ function setCookie(cname, cvalue, exdays) {
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
-
 function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
@@ -25,20 +24,8 @@ function getCookie(cname) {
     return "";
 }
 
-var confirmation = getCookie("CookiesConfirm");
-console.log(confirmation);
-
-if (confirmation == ""); {
-    setCookie("CookiesConfirm", "false", 9999);
-    ButtonCookie.style.display = "block";
-}
-elif(confirmation == "false"); {
-    ButtonCookie.style.display = "block";
-}
-elif(confirmation == "true"); {
-    ButtonCookie.style.display = "none";
-}
-
+setCookie("CookiesConfirm", "false", 9999);
+ButtonCookie.style.display = "inline-block";
 CookieConfirmButton.onclick = function() {
     setCookie("CookiesConfirm", "true", 9999);
     ButtonCookie.style.display = "none";
