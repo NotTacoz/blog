@@ -1,9 +1,10 @@
 html {
-    background-color: aquamarine;
+    background-image: url("../img/44843.jpg");
     font-family: Arial, Helvetica, sans-serif;
+    color: white
 }
 
-a:link {
+.hyperlink:link {
     color: rgb(47, 181, 231);
     text-decoration: none;
 }
@@ -46,8 +47,44 @@ a:link {
 
 #CookieConfirmButton:hover {
     background-color: rgb(50, 50, 100);
+    cursor: pointer;
 }
 
 #CookieConfirmButton:focus {
     outline: 0px;
+}
+
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    opacity: 0.8;
+    margin-left: -8px;
+    padding: -7px;
+    overflow: hidden;
+    border: 0px;
+    background-color: rgb(30, 30, 30);
+    top: -8px;
+    position: relative;
+    width: 100%;
+}
+
+.navpog {
+    float: left;
+}
+
+.navpog a {
+    display: block;
+    color: lightgray;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+}
+
+.navpog a:hover:not(.active) {
+    background-color: rgb(60, 60, 60);
+}
+
+.navpog a.active {
+    color: white;
+    text-shadow: 0 0 15px #4CAF50;
 }
