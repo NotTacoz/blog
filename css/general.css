@@ -1,0 +1,39 @@
+html {
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link {
+    color: rgb(47, 181, 231);
+    text-decoration: none;
+}
+
+.cookiesPopup {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: white;
+    padding: 2px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: rgb(30, 30, 60);
+    align-items: center;
+}
+
+#CookieConfirmButton {
+    background-color: rgb(30, 30, 70);
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border: 0px;
+}
+
+#CookieConfirmButton:hover {
+    background-color: rgb(50, 50, 100);
+}
+
+#CookieConfirmButton:focus {
+    outline: 0px;
+}
