@@ -70,6 +70,7 @@ html {
 
 .navpog {
     float: left;
+    position: relative;
 }
 
 .navpog a {
@@ -80,11 +81,34 @@ html {
     text-decoration: none;
 }
 
-.navpog a:hover:not(.active) {
+.navpog a:hover {
     background-color: rgb(60, 60, 60);
+    transition: .3s;
+}
+
+.navpog a:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) scaleX(0);
+    -webkit-transform: translateX(-50%) scaleX(0);
+    -webkit-transition-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(54, 173, 228, 0.9);
+    text-shadow: 0 0 15px rgba(54, 157, 204, 0.9);
+    -webkit-transition: transform 250ms;
+    transition: transform 250ms;
+}
+
+.navpog a:hover::after {
+    -webkit-transform: translateX(-50%) scaleX(1);
+    transform: translateX(-50%) scaleX(1);
 }
 
 .navpog a.active {
     color: white;
-    text-shadow: 0 0 15px #4CAF50;
+    text-shadow: 0 0 25px #4CAF50;
 }
