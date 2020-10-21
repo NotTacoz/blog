@@ -55,12 +55,12 @@ html {
 }
 
 .navigation {
+    overflow: hidden;
     list-style-type: none;
     margin: 0;
     opacity: 0.8;
     margin-left: -8px;
     padding: -7px;
-    overflow: hidden;
     border: 0px;
     background-color: rgb(30, 30, 30);
     top: -8px;
@@ -71,6 +71,8 @@ html {
 .navpog {
     float: left;
     position: relative;
+    opacity: 1;
+    color: white;
 }
 
 .navpog a {
@@ -87,8 +89,7 @@ html {
     transition: .3s;
 }
 
-.testlogo {
-    color: #f00;
+.invertcolors {
     -webkit-filter: invert(100%);
     filter: invert(100%);
 }
@@ -123,4 +124,16 @@ html {
 .navpog a.active:not:hover {
     -webkit-transform: translateX(-50%) scaleX(1);
     transform: translateX(-50%) scaleX(1);
+}
+
+.dropdown-content {
+    list-style-type: none;
+}
+
+.dropdown:hover {
+    display: block;
+}
+
+.dropdown {
+    display: none;
 }
