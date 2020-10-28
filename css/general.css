@@ -1,5 +1,4 @@
 html {
-    background-image: url("../img/44843.jpg");
     font-family: Arial, Helvetica, sans-serif;
     color: white
 }
@@ -83,12 +82,6 @@ html {
     text-decoration: none;
 }
 
-.navpog a:hover {
-    background-color: rgb(60, 60, 60);
-    text-shadow: 0 0 25px #4CAF50;
-    transition: .3s;
-}
-
 .invertcolors {
     -webkit-filter: invert(100%);
     filter: invert(100%);
@@ -134,6 +127,67 @@ html {
     display: block;
 }
 
+.navpog {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.navpog:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(68, 174, 223, 0.2);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.navpog:hover,
+.navpog:focus,
+.navpog:active {
+    color: white;
+}
+
+.navpog:hover:before,
+.navpog:focus:before,
+.navpog:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.testlogo {
+    padding-right: 50px;
+}
+
 .dropdown {
     display: none;
+}
+
+.wrapper.style3 {
+    background-color: #000;
+    color: #bfbfbf;
+    background-image: url("https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/napavalley/Chappellet_Vineyard_Sunset_in_Fall_42eaa7cf-a1f1-4f6b-a260-b6890a6762db.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
 }
