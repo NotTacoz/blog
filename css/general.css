@@ -1,6 +1,9 @@
         html {
             font-family: Arial, Helvetica, sans-serif;
             color: black;
+            background-color: lightgray;
+            background-image: url"../44843.jpg";
+            margin-bottom: 250px;
         }
         
         body {
@@ -38,13 +41,17 @@
             bottom: 15px;
             width: 50%;
             align-items: center;
-            opacity: 0.75;
+            opacity: 0.5;
             margin-left: 23%;
             margin-right: 23%;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
         }
         
         #ButtonCookie:hover {
             opacity: 1;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
         }
         
         #CookieConfirmButton {
@@ -56,6 +63,7 @@
             padding-bottom: 10px;
             border-radius: 10px;
             border: 0px;
+            margin-left: 30px;
         }
         
         #CookieConfirmButton:hover {
@@ -205,7 +213,18 @@
             padding: 30px 25px 30px 25px;
         }
         
-        .inner {
+        .wrapper.style4 {
+            background-color: white;
+            padding: 30px 25px 30px 25px;
+        }
+        
+        .inlinebox {
+            display: inline-block;
+            max-width: 30%;
+            padding: 10px 100px 10px 100px;
+        }
+        
+        .inner.transparentbg {
             background-color: rgba(0, 0, 0, 0.5);
             padding: 10px;
             border: 3px solid white;
